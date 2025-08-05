@@ -22,8 +22,8 @@ Include this in the `<head>` section of your HTML file:
 Parameters:
 - parent(`HTMLElement`): the element where you want to insert the custom checkbox. Does not work on self closing tags, like img, input;
 - index(`number`): the position in the parent where you want to insert the custom checkbox (0 for first etc.);
-- checked(`boolean`, optional): check/uncheck the checkbox. Default: `false`;
-- disabled(`boolean`, optional): enable/disable the checkbox. Default: `false`.
+- checked(`boolean`): check/uncheck the checkbox. Default: `false`;
+- disabled(`boolean`): enable/disable the checkbox. Default: `false`.
 
 Examples:
 ```js
