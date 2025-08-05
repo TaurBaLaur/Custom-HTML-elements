@@ -1,0 +1,39 @@
+.custom-checkbox-wrapper{
+    box-sizing: border-box;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+
+.custom-checkbox-wrapper:hover{
+    cursor: pointer;
+    border-color: black;
+}
+
+.custom-checkbox-wrapper.checked{
+    background-color: rgb(25, 100, 255);
+    border-color: rgb(25, 100, 255);
+    background-image: url('https://cdn.jsdelivr.net/gh/TaurBaLaur/Custom-HTML-elements@1.0.0/custom-checkbox/check-mark.svg');
+    background-size: contain;
+}
+
+.custom-checkbox-wrapper.checked:hover{
+    background-color: rgb(30, 90, 200);
+    border-color: rgb(30, 90, 200);
+}
+
+.custom-checkbox-wrapper.disabled{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.custom-checkbox-wrapper.disabled:hover{
+    border: 2px solid grey;
+    background-color: white;
+}
+
+.custom-checkbox-wrapper.checked.disabled:hover{
+    background-color: rgb(25, 100, 255);
+    border-color: rgb(25, 100, 255);
+}
