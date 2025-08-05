@@ -18,7 +18,9 @@ Include this in the `<head>` section of your HTML file:
 ### Public fields
 - checkbox(`HTMLElement`): a reference to the element that represents the checkbox
 
-### constructor
+### Methods
+
+#### constructor(parent, index, checked = false, disabled = false)
 Parameters:
 - parent(`HTMLElement`): the element where you want to insert the custom checkbox. Does not work on self closing tags, like img, input;
 - index(`number`): the position in the parent where you want to insert the custom checkbox (0 for first etc.);
@@ -37,14 +39,14 @@ This will create a container with the following structure:
 ```
 Classes used by the container: `custom-checkbox-wrapper`, `checked`, `disabled`.
 
-### isChecked
+#### isChecked()
 Returns `true` if the checkbox is checked, `false` otherwise.
 
-### toggleChecked
+#### toggleChecked()
 Checks/unchecks the checkbox.
 
-### isDisabled
+#### isDisabled()
 Returns `true` if the checkbox is disabled, `false` otherwise.
 
-### toggleDisabled
+#### toggleDisabled()
 Enables/disables the checkbox.
