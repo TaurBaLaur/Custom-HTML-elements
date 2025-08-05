@@ -1,7 +1,7 @@
 # Custom-HTML-elements
 Some HTML input elements appear differently across browsers. The elements defined in this repo ensure your design remains consistent across all of them.
 
-**Once in a while, check out this repo to see if you use the latest version.**
+**Once in a while, check out the 'How to use' sections of the elements you chose to work with, to make sure you are using the latest version.**
 
 ## Table of Contents
 - [CustomCheckbox](#customcheckbox)
@@ -15,7 +15,7 @@ Include this in the `<head>` section of your HTML file:
 	<script src="https://cdn.jsdelivr.net/gh/TaurBaLaur/Custom-HTML-elements@1.0.0/custom-checkbox/custom-checkbox-script.js"></script>
 ```
 
-### Fields
+### Public fields
 - checkbox(`HTMLElement`): a reference to the element that represents the checkbox
 
 ### constructor
@@ -27,9 +27,15 @@ Parameters:
 
 Examples:
 ```js
-	const myCheckbox = new CustomCheckbox(document.getElementById('container'),0);
-	const myCheckbox = new CustomCheckbox(document.getElementById('container'), 0, checked = true, disabled = true);
+	const myCheckbox = new CustomCheckbox(document.getElementById('parent'),0);
+	const myCheckbox = new CustomCheckbox(document.getElementById('parent'), 0, checked = true, disabled = true);
 ```
+
+This will create a container with the following structure: 
+```html
+	<div class="custom-checkbox-wrapper"></div>
+```
+Classes used by the container: `custom-checkbox-wrapper`, `checked`, `disabled`.
 
 ### isChecked
 Returns `true` if the checkbox is checked, `false` otherwise.
