@@ -8,14 +8,7 @@ Some HTML input elements appear differently across browsers. The elements define
 
 ## CustomCheckbox
 
-<p align="center">
-  <img src="custom-checkbox/look/unchecked.png" width="100" />
-  <img src="image2.png" width="100" />
-  <img src="image3.png" width="100" />
-  <img src="image4.png" width="100" />
-</p>
-
-| ![](custom-checkbox/look/unchecked.png) | ![](custom-checkbox/look/checked.png) | ![](custom-checkbox/look/unchecked-disabled.png) | ![](custom-checkbox/look/checked-disabled.png) |
+| ![](custom-checkbox/looks/unchecked.png) | ![](custom-checkbox/looks/checked.png) | ![](custom-checkbox/looks/unchecked-disabled.png) | ![](custom-checkbox/looks/checked-disabled.png) |
 |:---------------:|:---------------:|:---------------:|:---------------:|
 | Unchecked       | Checked       | Unchecked & Disabled      | Checked & Disabled       |
 
