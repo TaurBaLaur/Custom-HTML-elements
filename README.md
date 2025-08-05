@@ -3,6 +3,9 @@ Some HTML input elements appear differently across browsers. The elements define
 
 **Once in a while, check out this repo to see if you use the latest version.**
 
+## Table of Contents
+- [CustomCheckbox](#customcheckbox)
+
 ## CustomCheckbox
 
 ### How to use
