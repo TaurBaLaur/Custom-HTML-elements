@@ -16,16 +16,14 @@ Include this in the `<head>` section of your HTML file:
 ```
 
 ### Public fields
-- checkbox(`HTMLElement`): a reference to the element that represents the checkbox
+- **checkbox**(`HTMLElement`): a reference to the element that represents the checkbox
 
-### Methods
-
-#### constructor(parent, index, checked = false, disabled = false)
+### constructor
 Parameters:
-- parent(`HTMLElement`): the element where you want to insert the custom checkbox. Does not work on self closing tags, like img, input;
-- index(`number`): the position in the parent where you want to insert the custom checkbox (0 for first etc.);
-- checked(`boolean`): check/uncheck the checkbox. Default: `false`;
-- disabled(`boolean`): enable/disable the checkbox. Default: `false`.
+- **parent**(`HTMLElement`): the element where you want to insert the custom checkbox. Does not work on self closing tags, like img, input;
+- **index**(`number`): the position in the parent where you want to insert the custom checkbox (0 for first etc.);
+- **checked**(`boolean`): check/uncheck the checkbox. Default: `false`;
+- **disabled**(`boolean`): enable/disable the checkbox. Default: `false`.
 
 Examples:
 ```js
@@ -39,14 +37,26 @@ This will create a container with the following structure:
 ```
 Classes used by the container: `custom-checkbox-wrapper`, `checked`, `disabled`.
 
-#### isChecked()
+### isChecked
 Returns `true` if the checkbox is checked, `false` otherwise.
+```js
+	const value = myCheckbox.isChecked();
+```
 
-#### toggleChecked()
+### toggleChecked
 Checks/unchecks the checkbox.
+```js
+	myCheckbox.toggleChecked();
+```
 
-#### isDisabled()
+### isDisabled
 Returns `true` if the checkbox is disabled, `false` otherwise.
+```js
+	const value = myCheckbox.isDisabled();
+```
 
-#### toggleDisabled()
+### toggleDisabled
 Enables/disables the checkbox.
+```js
+	myCheckbox.toggleDisabled();
+```
